@@ -55,10 +55,18 @@
     </p>
 
     <script>
-      function firstLetterBig() {
-        // TODO: 조건을 만족하는 firstLetterBig 함수를 완성해주세요.
-      }
+      function firstLetterBig(str) {
+        console.log(str);
 
+        let firstUpper = str[0].toUpperCase();
+        console.log(firstUpper);
+
+        let otherStr = str.slice(1);
+        console.log(otherStr);
+        return firstUpper + otherStr;
+      }
+    
+      console.log(firstLetterBig("orange"))
       // TODO: 해당 html 파일을 실행한 브라우저 콘솔창에서 firstLetterBig 함수를 호출해주세요!
       // firstLetterBig('happy');
       // firstLetterBig('lucky');
